@@ -1,0 +1,10 @@
+{% extends "student/base_layout.html" %}
+
+{% block body %}
+ <h1>task list</h1>
+    <ul>
+    {% for task in tasklist %}
+          <li> {{ task }}  </li>
+    {% endfor %}
+    </ul>
+{% endblock %}
