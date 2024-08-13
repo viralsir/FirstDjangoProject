@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "helloapp.apps.HelloappConfig",
     "student.apps.StudentConfig",
-    "task.apps.TaskConfig"
+    "task.apps.TaskConfig",
+    "airline.apps.AirlineConfig"
 ]
 
 MIDDLEWARE = [
