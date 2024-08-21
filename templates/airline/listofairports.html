@@ -1,0 +1,24 @@
+{%  extends "student/base_layout.html" %}
+
+{% block body %}
+
+{#    <ul>#}
+{#        {% for record in airports %}#}
+{#            <li> city :{{ record.city }} -> code : {{ record.code }}  </li>#}
+{#        {% endfor %}#}
+{#    </ul>#}
+{#    #}
+      <table border="2" align="center">
+      <tr>
+          <th>Code </th> <th>City</th>
+      </tr>
+      {%  for record in airports %}
+        <tr>
+            <td>{{ record.code }}</td>
+            <td>{{ record.city }}</td>
+        </tr>
+      {% endfor %}
+      </table>
+    
+    
+{% endblock %}

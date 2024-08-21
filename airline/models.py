@@ -10,3 +10,5 @@ class airport(models.Model):
 
     def __str__(self):
         return self.city + " - " + self.code
+
+
