@@ -19,3 +19,12 @@ class flight(models.Model):
     duration = models.IntegerField(default=0)
     def __str__(self):
         return self.departure.city + " -> " + self.arrival.city
+
+class passenger(models.Model):
+    name= models.CharField(max_length=50)
+    address=models.CharField(max_length=200)
+    flights=models.ManyToManyField(flight, related_name='passengers')
+
+    def __str__(self):
+        return self.name;
+

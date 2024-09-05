@@ -1,0 +1,20 @@
+{% extends "student/base_layout.html" %}
+
+{% block title %}
+    Flight List
+{% endblock %}
+
+{% block body %}
+    <table border="2">
+        <tr>
+            <th>Flight List </th>
+        </tr>
+        {% for flight in flights %}
+         <tr>
+            <td><a href="{% url 'flight-details' flight.id %}"> {{ flight }} </a>  </td>
+         </tr>
+            {% endfor %}
+    
+       
+    </table>
+{% endblock %}

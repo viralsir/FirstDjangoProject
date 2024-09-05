@@ -1,0 +1,37 @@
+{% extends "student/base_layout.html" %}
+{% block title %}
+    Flight Detail
+{% endblock %}
+{% block body %}
+    <h1> Flight Details </h1>
+    <ul>
+      <li>
+          departure Airport : code : {{ flight.departure.code }} , city : {{ flight.departure.city }}
+          
+      </li>
+       <li>
+           arrival Airport : code : {{ flight.arrival.code }} , city : {{ flight.arrival.city }}
+       </li>
+       <li>
+           Duration : {{ flight.duration }} Hours
+       </li>
+    </ul>
+    
+ <h1> 
+   Passenger List :
+ </h1>   
+    
+   <table>
+      <tr> 
+        <th> Name </th>
+        <th> Adress </th>
+      </tr>
+      {% for passenger in passengers %}
+          <tr>
+             <td> {{ passenger.name }}</td>
+             <td> {{ passenger.address }}</td>
+          </tr>
+      {% endfor %}
+   </table>  
+    
+{% endblock %}
