@@ -34,4 +34,22 @@
       {% endfor %}
    </table>  
     
+    
+    <h1> 
+    Non Passenger List :
+ </h1>   
+    
+ <table>
+      <tr> 
+        <th> Name </th>
+        <th> Adress </th>
+      </tr>
+      {% for passenger in npassenger %}
+          <tr>
+             <td> {{ passenger.name }}</td>
+             <td> {{ passenger.address }}</td>
+          </tr>
+      {% endfor %}
+   </table>  
+    
 {% endblock %}

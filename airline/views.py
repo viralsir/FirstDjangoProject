@@ -22,5 +22,5 @@ def flight_details(request,flight_id):
                    {
                        "flight":flightdetail,
                        "passengers":flightdetail.passengers.all(),
-                       #"passenger":passenger.objects.all(flight_id=flight_id),
+                        "npassenger":passenger.objects.exclude(flights=flightdetail)
                     })

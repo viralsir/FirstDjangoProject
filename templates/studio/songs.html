@@ -1,0 +1,12 @@
+{% extends "student/base_layout.html" %}
+{% block body %}
+        <h3> List of songs </h3>
+    <ul>
+
+    {% for song in git %}
+        <li>
+    <a href="{% url "music-page" song.id %}">{{ song }}</a>
+        </li>
+    </ul>    
+    {% endfor %}
+{% endblock %}

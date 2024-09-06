@@ -1,0 +1,11 @@
+{% extends "student/base_layout.html" %}
+{% block body %}
+    <h2>:song:</h2>
+{#    {% for git in song %}#}
+{#    <li>{{ git }}</li>#}
+{#    {% endfor %}#}
+    <h2>:singer:</h2>
+    {% for musician in singer %}
+    <li>{{ musician }}</li>
+    {% endfor %}
+{% endblock %}

@@ -23,5 +23,6 @@ urlpatterns = [
     path("student/", include("student.urls")),
     path("task/",include("task.urls")),
     path("airline/",include("airline.urls")),
+    path("music/",include("music.urls"))
 
 ]
